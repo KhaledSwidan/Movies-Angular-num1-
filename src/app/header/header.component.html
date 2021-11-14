@@ -1,0 +1,11 @@
+<header class="vh-100 mb-3">
+  <div class="conainer owl mx-auto w-75">
+    <owl-carousel-o [options]="custOptions" class="w-100">
+      <ng-container *ngFor="let slide of headerMovies">
+        <ng-template carouselSlide [id]="slide.id">
+          <img [src]="imgs+slide.poster_path" [alt]="slide.alt" [title]="slide.title" class="w-75 rounded">
+        </ng-template>
+      </ng-container>
+    </owl-carousel-o>
+  </div>
+</header>

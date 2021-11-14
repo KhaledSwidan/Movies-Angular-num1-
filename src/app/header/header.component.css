@@ -1,0 +1,11 @@
+header{
+  background-image: url('../../assets/724132.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+.owl{
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  justify-content: center;
+}

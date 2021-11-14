@@ -1,0 +1,18 @@
+.vot{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 10%;
+    background-color: rgb(133 133 133 / 36%);
+    padding: 2%;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(255 255 255 / 80%);
+    margin: 2%;
+}
+.brdr{
+  height: 4px;
+  width: 100%;
+  background: rgb(63,124,251);
+background: radial-gradient(circle, rgba(63,124,251,1) 6%, rgba(66,163,251,1) 13%, rgba(119,71,251,1) 22%, rgba(176,71,251,1) 29%, rgba(201,71,251,1) 38%, rgba(71,74,251,1) 52%, rgba(74,140,251,1) 60%, rgba(235,81,251,1) 69%, rgba(79,152,251,1) 77%, rgba(88,160,251,1) 83%, rgba(97,175,251,1) 91%, rgba(104,152,251,1) 96%, rgba(128,70,252,1) 100%);
+}

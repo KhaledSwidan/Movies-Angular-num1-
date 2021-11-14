@@ -1,0 +1,27 @@
+<div class="container my-5">
+  <h2 class="m-0">Login Now</h2>
+  <div *ngIf="err" class="alert alert-danger my-3">
+    {{err}}
+  </div>
+  <form action="" class="my-4" [formGroup]="loginForm" (ngSubmit)="submitLoginForm(loginForm)">
+    <div class="my-3">
+      <label for="email" class="form-label">Email :</label>
+      <input formControlName="email" type="email" class="form-control" id="email" placeholder="Your Email...">
+      <div *ngIf="loginForm.get('email')?.errors != null && loginForm.get('email')?.touched"
+        class="alert alert-danger mt-2">
+        <p class="mb-0" *ngIf="loginForm.get('email')?.errors?.required">email is required</p>
+        <p class="mb-0" *ngIf="loginForm.get('email')?.errors?.email">email is invalid</p>
+      </div>
+    </div>
+    <div class="my-3">
+      <label for="password" class="form-label">Password :</label>
+      <input formControlName="password" type="password" class="form-control" id="password"
+        placeholder="Your Password...">
+      <div *ngIf="loginForm.get('password')?.errors != null && loginForm.get('password')?.touched"
+        class="alert alert-danger mt-2">
+        <p class="mb-0" *ngIf="loginForm.get('password')?.errors?.required">password is required</p>
+      </div>
+    </div>
+    <button [disabled]="loginForm.invalid" class="btn btn-info">Login</button>
+  </form>
+</div>
